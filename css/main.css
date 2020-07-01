@@ -1,0 +1,651 @@
+@charset "utf-8";
+
+@import url(reset.css);
+
+
+/* ********************* 레이아웃 구성시작  ******************** */
+header { height: 105px; }
+nav { height: 84px; }
+#mainview { height: 777px; margin-bottom: 42px;}
+#night { height: 756px; margin-bottom: 63px;}
+#ample { height: 525px; }
+#dust{ height: 756px; }
+#info{ height: 315px; }
+footer { height: 156px; }
+
+.container {
+  width: 1170px; height: 100%; margin: auto;
+}
+
+
+/* ********************* 개별영역 선언시작  ******************** */
+/* ******************* header Area Start ***************** */
+header{ 
+  position: relative; 
+}
+/* site logo */
+header h1 {
+  width: 765px; height: 105px;
+  position: absolute; left: 50%; top: 50%;
+  margin-left: -142px; margin-top: -2px;
+  background: url(../images/logo.png) no-repeat 0 0;
+}
+header h1 a { 
+  width: 230px; height: 53px; 
+}
+
+/* sns-group */
+header .sns-group {
+  float: left;
+  margin-top: 62px;
+  position: relative;
+}
+header .sns-group a {
+  margin-right: 5px;
+  position: relative;
+  margin: 0 15px;
+}
+header .sns-group a:first-child {
+  font: 400 2.3em 'Nanum Gothic', sans-serif;
+  position: absolute;
+  left: 0; top: 0;
+}
+header .sns-group a:nth-child(2) {
+  position: absolute;
+  left: 45px; top: 3px;
+}
+header .sns-group a:last-child {
+  position: absolute;
+  left: 100px; top: 0px;
+}
+header .sns-group a::after {
+  content: ''; display: block;
+  width: 1px; height: 21px;
+  position: absolute; right: -15px; bottom: 7px; 
+  background-color: #ccc;
+}
+header .sns-group a:last-child::after {
+  display: none;
+}
+header .sns-group a:hover {
+  color: #32b4e4;
+}
+
+/* tel */
+header .tel {
+  float: right;
+  font: 700 2em/21px 'Nanum Gothic', sans-serif;
+  margin-top: 62px;
+}
+header .tel span {
+  font: 400 0.8em/21px 'Nanum Gothic', sans-serif;
+  color: #32b4e4;
+}
+
+
+/* ******************* nav Area Start ***************** */
+nav .container {
+  position: relative;
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute; 
+  left: 0; top: 50px;
+  border-top: 1px solid #ccc;
+}
+nav li {
+  float: left;
+  padding: 25px 18px 0 17px;
+}
+nav li a{
+  font: 700 1.5em/21px 'Nanum Gothic', sans-serif;
+}
+nav li a:hover{
+  color: #32b4e4;
+}
+nav li:first-child {
+  width: 84px; height: 84px;
+  background-color: #32b2e3;
+  text-align: center;
+  padding-top: 21px;
+}
+nav li:first-child a{
+  font: 400 3em/21px 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+nav li:last-child {
+  width: 136px; height: 84px;
+  background: #46bae5; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #46bae5 1%, #60c3c1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #46bae5 1%,#60c3c1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #46bae5 1%,#60c3c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+nav li:last-child a {
+  color: #fff;
+}
+
+
+/* ******************* mainview Area Start ***************** */
+#mainview {
+  background: url(../images/mainimg.png) no-repeat 0 0px;
+  margin-bottom: 42px;
+}
+#mainview .container {
+  position: relative;
+}
+#mainview .main-title, 
+#mainview .main-icons-box {
+  position: absolute; left: 50%; top: 50%;
+  
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+/* main-title */
+#mainview .main-title{
+  text-align: center;
+  top: 300px;
+}
+#mainview .main-title div {
+  width: 370px; height: 42px;
+  background: #46bae5; /* Old browsers */
+  background: -moz-linear-gradient(left, #46bae5 1%, #60c3c1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #46bae5 1%,#60c3c1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #46bae5 1%,#60c3c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  font: 400 2.4em/42px 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin: 0 0 21px 60px;
+}
+#mainview .main-title h2 {
+  font: 100 7.2em 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin-bottom: 42px;
+}
+#mainview .main-title p {
+  font: 100 1.8em 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+
+/* main-icons-box */
+#mainview .main-icons-box {
+  top: 550px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#mainview .main-icons{
+  text-align: center;
+}
+#mainview .main-icons a {
+  font: 400 6em/21px 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin: 0 20px;
+}
+#mainview .main-icons-text {
+  padding-top: 20px;
+}
+#mainview .main-icons-text a {
+  font: 400 2.2em/21px 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin: 0 5px;
+}
+#mainview .main-icons-text a:hover {
+  color: #32b4e4;
+}
+
+/* controls */
+#mainview .angle-left {
+  position: absolute;
+  left: -30%; top: 45%;
+}
+#mainview .angle-left a {
+  font: 100 10em/21px 'Roboto', sans-serif;
+  color: #fff;
+}
+#mainview .angle-right {
+  position: absolute;
+  right: -30%; top: 45%;
+}
+#mainview .angle-right a{
+  font: 100 10em/21px 'Roboto', sans-serif;
+  color: #fff;
+}
+#mainview .angle-down {
+  position: absolute;
+  left: 45%; bottom: 0;
+}
+#mainview .angle-down a {
+  font: 100 10em/21px 'Roboto', sans-serif;
+  color: #fff;
+}
+
+
+/* ******************* night Area Start ***************** */
+
+/* night-title */
+#night .night-title {
+  text-align: center;
+}
+#night .night-title p {
+  font: 400 2.4em 'Nanum Gothic', sans-serif;
+  color: #99d9f1;
+  margin-bottom: 21px;
+}
+#night .night-title h3 {
+  font: 400 4.8em 'Nanum Gothic', sans-serif;
+  margin-bottom: 84px;
+  position: relative;
+}
+#night .night-title h3::after {
+  content: ''; display: block;
+  width: 100px; height: 1px;
+  position: absolute; 
+  left: 550px; bottom: -35px; 
+  background-color: #000;
+}
+
+/* *** night-boxes *** */
+#night .night-boxes {
+  width: 100%; height: 546px;
+}
+/* night-box1 */
+#night .night-box1 {
+  width: 584px; height: 273px;
+  float: left;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 42px;
+}
+#night .night-box1 h4 {
+  font: 400 3.6em/1.5 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+}
+#night .night-box1 h4 span{
+  font: 400 1em 'Nanum Gothic', sans-serif;
+  color: #2fade0;
+}
+#night .night-box1 p{
+  font: 700 1.8em/1.5 'Nanum Gothic', sans-serif;
+}
+#night .night-box1 img {
+  position: absolute;
+  right: 0; bottom: 0;
+}
+
+/* night-box2 */
+#night .night-box2 {
+  width: 293px; height: 273px;
+  float: left;
+  background: #46bae5; /* Old browsers */
+  background: -moz-linear-gradient(left, #46bae5 1%, #60c3c1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #46bae5 1%,#60c3c1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #46bae5 1%,#60c3c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: relative;
+  padding: 42px;
+}
+#night .night-box2 p {
+  font: 400 1.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box2 h4 {
+  font: 400 2.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+#night .night-box2 h4::after {
+  content: ''; display: block;
+  width: 50px; height: 1px;
+  position: absolute; 
+  left: 0px; bottom: -15px; 
+  background-color: #fff;
+}
+#night .night-box2 a {
+  font: 400 1.8em/42px 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box2 img {
+  position: absolute;
+  right: 0; bottom: 0;
+}
+
+/* night-box3 */
+#night .night-box3 {
+  width: 293px; height: 273px;
+  float: left;
+  background-color: #34b6e5;
+  position: relative;
+  padding: 42px;
+}
+#night .night-box3 p {
+  font: 400 1.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box3 h4 {
+  font: 400 2.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+#night .night-box3 h4::after {
+  content: ''; display: block;
+  width: 50px; height: 1px;
+  position: absolute; 
+  left: 0px; bottom: -15px; 
+  background-color: #fff;
+}
+#night .night-box3 a {
+  font: 400 1.8em/42px 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box3 img {
+  position: absolute;
+  right: 0; bottom: 0;
+}
+
+/* night-box4 */
+#night .night-box4 {
+  width: 293px; height: 273px;
+  float: left;
+  background-color: #34b6e5;
+  padding: 42px 0 0 21px;
+}
+#night .night-box4 p {
+  font: 400 1.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box4 h4 {
+  font: 400 2.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+#night .night-box4 h4::after {
+  content: ''; display: block;
+  width: 50px; height: 1px;
+  position: absolute; 
+  left: 0px; bottom: -15px; 
+  background-color: #fff;
+}
+
+/* night-box5 */
+#night .night-box5 {
+  width: 293px; height: 273px;
+  float: left;
+  background-color: #386277;
+  position: relative;
+  padding: 42px;
+}
+#night .night-box5 p {
+  font: 400 1.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box5 h4 {
+  font: 400 2.4em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+  position: relative;
+}
+#night .night-box5 h4::after {
+  content: ''; display: block;
+  width: 50px; height: 1px;
+  position: absolute; 
+  left: 0px; bottom: -15px; 
+  background-color: #fff;
+}
+#night .night-box5 a {
+  font: 400 1.8em/42px 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box5 img {
+  position: absolute;
+  right: 0; bottom: 0;
+}
+
+/* night-box6 */
+#night .night-box6 {
+  width: 584px; height: 273px;
+  float: left;
+  background: #a3a6ab; /* Old browsers */
+  background: -moz-linear-gradient(left, #a3a6ab 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #a3a6ab 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a3a6ab 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  position: relative;
+  padding: 42px;
+}
+#night .night-box6 h4 {
+  font: 400 3.6em/1.5 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+  color: #fff;
+}
+#night .night-box6 p{
+  font: 700 1.8em/1.5 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+#night .night-box6 img {
+  position: absolute;
+  right: 0; bottom: 0;
+}
+
+
+/* ******************* ample Area Start ***************** */
+/* ample-title */
+#ample .ample-title {
+  width: 100%; height: 126px;
+  margin-bottom: 21px;
+}
+#ample .ample-title p {
+  font: 400 2em/1.5 'Nanum Gothic', sans-serif;
+}
+#ample .ample-title h3 {
+  font: 400 3.6em/1.5 'Nanum Gothic', sans-serif;
+}
+#ample .ample-title h3 span {
+  color: #2fade0;
+}
+
+/* ample-icons */
+#ample .ample-icons {
+  width: 930px; height: 190px;
+  float: left;
+}
+#ample .ample-icons li {
+  width: 290px; height: 55px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 15px;
+  margin: 0 20px 10px 0;
+  float: left;
+}
+#ample .ample-icons a {
+  width: 100%; height: 100%;
+  font: 400 1.4em 'Nanum Gothic', sans-serif;
+  color: #ccc;
+}
+#ample .ample-icons a:hover {
+  color: #2fade0;
+}
+#ample .ample-icons span {
+  float: left;
+}
+#ample .ample-icons img {
+  float: right;
+}
+
+
+
+/* ******************* dust Area Start ***************** */
+#dust {
+  background: url(../images/dust-back.png);
+}
+#dust .dust-area-title {
+  padding-top: 105px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 84px;
+}
+#dust .dust-area-title p { 
+  font: 400 2em/48px 'Nanum Gothic', sans-serif;
+ }
+#dust .dust-area-title h3 { 
+  font: 400 3em 'Nanum Gothic', sans-serif;
+  position: relative;
+}
+#dust .dust-area-title h3::after {
+  content: ''; display: block;
+  width: 100px; height: 1px;
+  position: absolute; 
+  left: 535px; bottom: -35px; 
+  background-color: #fff;
+}
+#dust .dust-box .dust-text {
+  width: 570px; height: 400px;
+  background-color: #fff;
+  float: left;
+  padding: 63px 70px 63px 70px;
+}
+#dust .dust-box .dust-text h4::before {
+  content: ''; display: block;
+  width: 50px; height: 1px;
+  position: absolute; 
+  left: 0; top: -20px; 
+  background-color: #000;
+}
+#dust .dust-box .dust-text h4 {
+  font: 400 3em/1.5 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+  position: relative;
+}
+#dust .dust-box .dust-text h4 span{
+  color: #2fade0;
+}
+#dust .dust-box .dust-text p {
+  font: 400 1.8em/1.5 'Nanum Gothic', sans-serif;
+  color: #555;
+}
+#dust .dust-box img {
+  width: 600px; height: 400px;
+  float: left;
+}
+
+
+/* ******************* info Area Start ***************** */
+#info .info-wrap {
+  width: 1044px; height: 190px;
+  /* border: 1px solid #000; */
+  margin: 126px 50px;
+}
+
+/* tel-box */
+#info .tel-box{
+  width: 330px; 
+  float: left;
+}
+#info .tel-text-box {
+  width: 230px; 
+  float: left;
+}
+#info .tel-text-box .tel-small-title {
+  text-decoration: underline;
+  font: 400 1.8em/36px 'Nanum Gothic', sans-serif;
+}
+#info .tel-text-box h4 {
+  font: 400 2.8em/36px 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+}
+#info .tel-text-box p {
+  font: 400 1.8em/36px 'Nanum Gothic', sans-serif;
+}
+
+/* news-box */
+#info .news-box {
+  width: 310px; 
+  height: 100%;
+  float: left;
+  border-right: 1px solid #ccc;
+  padding: 0 20px 0 20px;
+}
+#info .news-box .news-small-title {
+  text-decoration: underline;
+  font: 400 1.8em/36px 'Nanum Gothic', sans-serif;
+}
+#info .news-box h4 {
+  font: 400 2.8em/36px 'Nanum Gothic', sans-serif;
+  margin-bottom: 21px;
+}
+#info .news-box p {
+  font: 400 1.4em/21px 'Nanum Gothic', sans-serif;
+  color: #aaa;
+}
+
+/* *** faq-road-box *** */
+#info .faq-road-box {
+  width: 320px; 
+  float: left;
+  margin-left: 30px;
+}
+/* faq-box */
+#info .faq-box {
+  height: 84px;
+  border-bottom: 1px solid #ccc;
+}
+#info .faq-box .faq-text-box{
+  float: left;
+}
+#info .faq-text-box p {
+  font: 400 1.8em/36px 'Nanum Gothic', sans-serif;
+  color: #777777;
+}
+#info .faq-text-box h5 {
+  font: 400 2.4em 'Nanum Gothic', sans-serif;
+}
+#info .faq-box img{
+  float: right;
+}
+
+/* road-box */
+#info .road-box {
+  height: 84px;
+  padding-top: 21px;
+}
+#info .road-box .road-text-box {
+  float: left;
+}
+#info .road-text-box p {
+  font: 400 1.8em/36px 'Nanum Gothic', sans-serif;
+  color: #777777;
+}
+#info .road-text-box h5 {
+  font: 400 2.4em 'Nanum Gothic', sans-serif;
+}
+#info .road-box img{
+  float: right;
+}
+
+
+/* ******************* footer Area Start ***************** */
+footer {
+  background-color: #343434;
+  padding: 42px 100px 0 70px;
+}
+footer .footer-text-box {
+  float: left;
+}
+footer address {
+  font-style: normal;
+  font: 400 1.2em/21px 'Nanum Gothic', sans-serif;
+  color: #fff;
+  margin-bottom: 21px;
+}
+footer .copyright{
+  font: 400 1.2em/21px 'Nanum Gothic', sans-serif;
+  color: #fff;
+}
+footer img {
+  float: right;
+}
